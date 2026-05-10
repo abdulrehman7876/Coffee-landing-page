@@ -57,6 +57,7 @@ function Header({ isContactOpen, setIsContactOpen }) {
         ))}
         <div className="gold-line mt-4" />
         <button
+          aria-label="mobile-menu"
           onClick={() => {
             setIsContactOpen(true);
             setIsOpen(false);
