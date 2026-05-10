@@ -57,7 +57,7 @@ function Header({ isContactOpen, setIsContactOpen }) {
         ))}
         <div className="gold-line mt-4" />
         <button
-          aria-label="mobile-menu"
+          aria-label="order now"
           onClick={() => {
             setIsContactOpen(true);
             setIsOpen(false);
@@ -143,6 +143,7 @@ function Header({ isContactOpen, setIsContactOpen }) {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="sm:hidden text-amber-200 text-3xl p-1"
+            aria-label="mobile menu"
           >
             <MdMenu />
           </button>
@@ -182,6 +183,7 @@ function Header({ isContactOpen, setIsContactOpen }) {
             style={{ border: "1px solid rgba(201,149,47,0.6)" }}
             className="text-amber-200 text-xs px-2
             py-3 sm:text-xs tracking-[0.2em] sm:px-6 sm:py-2.5 hover:bg-amber-700/30 transition-colors duration-200 hover:cursor-pointer"
+            aria-label="order now"
           >
             ORDER NOW
           </button>
